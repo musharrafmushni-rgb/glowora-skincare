@@ -1,0 +1,43 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #FFF0F5; 
+}
+::-webkit-scrollbar-thumb {
+    background: #D81B60; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #AD1457; 
+}
+
+/* Fade-in Animation for Hero */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Image Hover Effect */
+.hero-image {
+    transition: transform 0.5s ease;
+}
+.hero-image:hover {
+    transform: scale(1.02);
+}

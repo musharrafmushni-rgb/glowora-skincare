@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowora - Radiant Skin, Timeless Beauty</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (CDN for quick start) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pink: '#D81B60',
+                            pinkHover: '#AD1457',
+                            light: '#FFF0F5',
+                            dark: '#1A1A1A',
+                            green: '#4A5D23',
+                        },
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans bg-brand-light text-brand-dark overflow-x-hidden">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="w-full py-4 px-6 md:px-12 flex items-center justify-between bg-white/70 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2">
+            <!-- Leaf Icon (SVG) -->
+            <svg class="w-7 h-7 text-brand-green" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C7 2 3 6 3 11c0 5 4 9 9 9s9-4 9-9c0-1-.2-2-.5-3C19 9 15 10 12 10c-2 0-4-.5-5.5-1.5C7.5 7 8.5 5 10 4c.5 3 2 4 2 4s1-3 3-4c1.5 1.5 2.5 3.5 2.5 6H12z"/>
+            </svg>
+            <span class="text-xl font-semibold tracking-wide">Glowora</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+            <li><a href="#" class="hover:text-brand-pink transition">Home</a></li>
+            <li><a href="#" class="hover:text-brand-pink transition">Shop</a></li>
+            <li><a href="#" class="hover:text-brand-pink transition">About</a></li>
+            <li><a href="#" class="hover:text-brand-pink transition">Blog</a></li>
+        </ul>
+
+        <!-- Right Side Icons -->
+        <div class="flex items-center gap-5">
+            <!-- Search -->
+            <button class="text-gray-700 hover:text-brand-pink transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/></svg>
+            </button>
+            
+            <!-- Cart with Badge -->
+            <button class="relative text-gray-700 hover:text-brand-pink transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                <span class="absolute -top-2 -right-2 bg-brand-pink text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">2</span>
+            </button>
+
+            <!-- Mobile Menu Toggle (Hamburger) -->
+            <button id="menu-toggle" class="md:hidden text-gray-700">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full z-40">
+        <ul class="flex flex-col p-6 gap-4 text-gray-700 font-medium">
+            <li><a href="#" class="hover:text-brand-pink">Home</a></li>
+            <li><a href="#" class="hover:text-brand-pink">Shop</a></li>
+            <li><a href="#" class="hover:text-brand-pink">About</a></li>
+            <li><a href="#" class="hover:text-brand-pink">Blog</a></li>
+        </ul>
+    </div>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="relative min-h-[85vh] flex items-center px-6 md:px-12 py-12">
+        
+        <!-- Background decorative gradient -->
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-light via-pink-50 to-pink-100 -z-10"></div>
+        
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- LEFT: Text Content -->
+            <div class="space-y-6 text-center md:text-left">
+                <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight text-brand-dark">
+                    Radiant Skin, <br>
+                    <span class="text-brand-pink italic">Timeless Beauty</span>
+                </h1>
+                <p class="text-gray-600 text-lg max-w-md mx-auto md:mx-0">
+                    Discover premium skincare for your natural glow. Formulated with love, backed by science.
+                </p>
+                
+                <div class="pt-4">
+                    <a href="#" class="inline-flex items-center gap-2 bg-brand-pink hover:bg-brand-pinkHover text-white px-8 py-3.5 rounded-full font-medium transition-all duration-300 shadow-lg shadow-pink-200 hover:shadow-xl hover:-translate-y-0.5">
+                        Shop Now
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT: Image -->
+            <div class="relative flex justify-center">
+                <!-- Decorative circles -->
+                <div class="absolute w-72 h-72 bg-pink-300 rounded-full blur-3xl opacity-30 -top-10 -right-10 -z-10"></div>
+                
+                <!-- Main Model Image -->
+                <img 
+                    src="https://images.unsplash.com/photo-1612817288484-6f916006741a?q=80&w=800&auto=format&fit=crop" 
+                    alt="Glowing Skincare Model" 
+                    class="rounded-[2rem] shadow-2xl object-cover w-full max-w-md h-[500px] border-4 border-white"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
