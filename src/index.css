@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Pink Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c0710;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d946ef;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
+
+/* Firefox Scrollbar Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d946ef #1c0710;
+}
+
+/* Decorative thin vertical line on the left side of hero text (purple/pink gradient) */
+.hero-accent-line {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.hero-accent-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #f472b6 0%, #c084fc 60%, rgba(192, 132, 252, 0.05) 100%);
+  border-radius: 9999px;
+  box-shadow: 0 0 14px rgba(244, 114, 182, 0.5);
+}
