@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+<<<<<<< HEAD
 export default {
   content: [
     "./index.html",
@@ -53,8 +54,30 @@ export default {
       animation: {
         'fade-in-up': 'fade-in-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards',
         'float': 'float 5s ease-in-out infinite',
+=======
+module.exports = {
+  content: ["./*.html", "./js/**/*.js"],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          pink: '#D81B60',       // Main button & highlight color
+          pinkHover: '#AD1457',  // Button hover color
+          light: '#FFF0F5',      // Light pink background
+          dark: '#1A1A1A',       // Dark text color
+          green: '#4A5D23',      // Logo leaf color
+        },
+      },
+      fontFamily: {
+        serif: ['"Playfair Display"', 'serif'],
+        sans: ['Poppins', 'sans-serif'],
+>>>>>>> a12c8d04442bd702dd8144202efe40fc91348fc8
       },
     },
   },
   plugins: [],
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a12c8d04442bd702dd8144202efe40fc91348fc8

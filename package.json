@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "react-app",
   "private": true,
   "version": "0.0.0",
@@ -27,5 +28,9 @@
     "postcss": "^8.5.33",
     "tailwindcss": "^3.4.19",
     "vite": "^8.3.6"
+=======
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+>>>>>>> a12c8d04442bd702dd8144202efe40fc91348fc8
   }
 }
