@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FiMenu, FiX, FiArrowUpRight } from 'react-icons/fi';
 
 const Navbar = () => {
