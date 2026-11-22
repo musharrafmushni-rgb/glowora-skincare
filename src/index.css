@@ -9,6 +9,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* வலது பக்கம் ஸ்க்ரோல் ஆவதை தடுக்கும் */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom Pink Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
