@@ -13,11 +13,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* வலது பக்கம் ஸ்க்ரோல் ஆவதை தடுக்கும் */
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* Custom Pink Scrollbar */
@@ -60,4 +55,81 @@ html {
   background: linear-gradient(180deg, #f472b6 0%, #c084fc 60%, rgba(192, 132, 252, 0.05) 100%);
   border-radius: 9999px;
   box-shadow: 0 0 14px rgba(244, 114, 182, 0.5);
+}
+
+/* Marquee infinite loop container */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Shimmer Button Light Sweep */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 80%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.8s ease;
+}
+
+.btn-shimmer:hover::after {
+  transform: translateX(100%);
+}
+
+
+/* Marquee infinite loop container */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Shimmer Button Light Sweep */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 80%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.8s ease;
+}
+
+.btn-shimmer:hover::after {
+  transform: translateX(100%);
 }

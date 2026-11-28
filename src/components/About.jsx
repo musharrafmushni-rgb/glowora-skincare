@@ -155,38 +155,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Floating Action Buttons (Fixed at Bottom Right) */}
-      <div className="fixed bottom-6 right-6 flex flex-col gap-3.5 z-50">
-        {/* WhatsApp Button with pulse effect */}
-        <a
-          href="https://wa.me/94770000000"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative group w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-all duration-300"
-          title="Chat on WhatsApp"
-        >
-          <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-25 pointer-events-none" />
-          <FaWhatsapp className="text-2xl" />
-          {/* Tooltip on hover */}
-          <span className="absolute right-16 bg-gray-900 text-white text-xs px-3 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md">
-            Chat on WhatsApp
-          </span>
-        </a>
-
-        {/* Direct Call / Contact Button */}
-        <a
-          href="tel:+94770000000"
-          className="relative group w-14 h-14 bg-[#2a0a18] text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-all duration-300 border border-pink-300/30"
-          title="Call Now"
-        >
-          <FiPhone className="text-xl text-pink-200" />
-          {/* Tooltip on hover */}
-          <span className="absolute right-16 bg-gray-900 text-white text-xs px-3 py-1.5 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-md">
-            Call +94 77 000 0000
-          </span>
-        </a>
-      </div>
-
     </section>
   );
 };

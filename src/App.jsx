@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import MarqueeBanner from './components/MarqueeBanner';
 import About from './components/About';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -8,7 +10,9 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <MarqueeBanner />
         <About />
+        <Services />
       </main>
     </div>
   );
